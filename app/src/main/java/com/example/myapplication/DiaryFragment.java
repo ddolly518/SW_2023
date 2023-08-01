@@ -111,9 +111,11 @@ public class DiaryFragment extends Fragment {
         recyclerView.setAdapter(adapter);
 
         btn_share = view.findViewById(R.id.btn_share);
-        btn_share.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        btn_share.setOnClickListener(view -> {
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            builder.setTitle("공유");
+            builder.setMessage("공유하시겠습니까?");
+            builder.setPositiveButton("Yes", (dialogInterface, i) -> {
                 String sKey = mDatabase.push().getKey();
                 if (sKey != null) {
                     mDatabase.child(sKey).child("content").setValue(contents);
@@ -123,7 +125,9 @@ public class DiaryFragment extends Fragment {
                 } else {
                     Toast.makeText(getActivity(), "공유 실패", Toast.LENGTH_SHORT).show();
                 }
-            }
+            });
+            builder.setNegativeButton("No", (dialogInterface, i) -> dialogInterface.dismiss());
+            builder.show();
         });
 
         btn_remove = view.findViewById(R.id.btn_remove);
