@@ -1,9 +1,14 @@
 package com.example.myapplication;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class BulletinInfo {
     private String content;
     private String date;
     private String name;
+    private int likeCount;
+    private boolean liked;
 
     public BulletinInfo() {
     }
@@ -28,5 +33,21 @@ public class BulletinInfo {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getLikeCount() {
+        return likeCount;
+    }
+
+    public void setLikeCount(int likeCount) {
+        this.likeCount = likeCount;
+    }
+
+    public boolean isLiked() {
+        return liked;
+    }
+
+    public void setLiked(boolean liked) {
+        this.liked = liked;
     }
 }

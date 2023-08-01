@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -30,9 +31,29 @@ public class BulletinAdapter extends RecyclerView.Adapter<BulletinAdapter.Bullet
 
     @Override
     public void onBindViewHolder(@NonNull BulletinViewHolder holder, int position) {
-        holder.textViewPostContent.setText(arrayList.get(position).getContent());
-        holder.textViewDate.setText(arrayList.get(position).getDate());
-        holder.textViewNickname.setText(arrayList.get(position).getName());
+        BulletinInfo bulletinInfo = arrayList.get(position);
+        holder.textViewPostContent.setText(bulletinInfo.getContent());
+        holder.textViewDate.setText(bulletinInfo.getDate());
+        holder.textViewNickname.setText(bulletinInfo.getName());
+        holder.btn_like.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int currentLikeCount = bulletinInfo.getLikeCount();
+
+                if (holder.btn_like.isSelected()) {
+                    currentLikeCount--;
+                    holder.btn_like.setImageResource(R.drawable.baseline_favorite_border_24);
+                    holder.btn_like.setSelected(false);
+                } else {
+                    currentLikeCount++;
+                    holder.btn_like.setImageResource(R.drawable.baseline_favorite_24);
+                    holder.btn_like.setSelected(true);
+                }
+                bulletinInfo.setLikeCount(currentLikeCount);
+                holder.likeCount.setText(String.valueOf(currentLikeCount));
+            }
+        });
+        holder.btn_like.setSelected(bulletinInfo.isLiked());
     }
 
     @Override
@@ -44,11 +65,15 @@ public class BulletinAdapter extends RecyclerView.Adapter<BulletinAdapter.Bullet
         TextView textViewPostContent;
         TextView textViewDate;
         TextView textViewNickname;
+        TextView likeCount;
+        ImageButton btn_like;
         public BulletinViewHolder(@NonNull View itemView) {
             super(itemView);
             this.textViewPostContent = itemView.findViewById(R.id.textViewPostContent);
             this.textViewDate = itemView.findViewById(R.id.textViewDate);
             this.textViewNickname = itemView.findViewById(R.id.textViewNickname);
+            this.likeCount = itemView.findViewById(R.id.likeCount);
+            this.btn_like = itemView.findViewById(R.id.btn_like);
         }
     }
 }
