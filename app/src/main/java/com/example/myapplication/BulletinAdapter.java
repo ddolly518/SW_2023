@@ -66,13 +66,17 @@ public class BulletinAdapter extends RecyclerView.Adapter<BulletinAdapter.Bullet
         TextView textViewDate;
         TextView textViewNickname;
         TextView likeCount;
+        TextView comment;
         ImageButton btn_like;
+        ImageButton btn_comment;
         public BulletinViewHolder(@NonNull View itemView) {
             super(itemView);
             this.textViewPostContent = itemView.findViewById(R.id.textViewPostContent);
             this.textViewDate = itemView.findViewById(R.id.textViewDate);
             this.textViewNickname = itemView.findViewById(R.id.textViewNickname);
             this.likeCount = itemView.findViewById(R.id.likeCount);
+            this.comment = itemView.findViewById(R.id.comment);
+            this.btn_comment = itemView.findViewById(R.id.btn_comment);
             this.btn_like = itemView.findViewById(R.id.btn_like);
         }
     }

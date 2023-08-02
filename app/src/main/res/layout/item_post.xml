@@ -7,8 +7,6 @@
     android:padding="16dp"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/background_color">
-    <!--일기를 다른 사람들과 공유하는 게시판-->
-
 
     <TextView
         android:id="@+id/textViewNickname"
@@ -24,20 +22,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:text="2023년 00월 00일" />
+        android:layout_marginStart="12dp"
+        android:text="날짜" />
 
     <TextView
         android:id="@+id/textViewPostContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
-        android:text="Hello, world!" />
+        android:layout_marginStart="12dp"
+        android:text="content" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center|right">
+        android:gravity="center|left">
 
         <ImageButton
             android:id="@+id/btn_like"
@@ -49,9 +49,25 @@
 
         <TextView
             android:id="@+id/likeCount"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textAlignment="center"
+            android:gravity="center"
             android:text="0" />
+
+        <ImageButton
+            android:id="@+id/btn_comment"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            tools:ignore="SpeakableTextPresentCheck"
+            app:srcCompat="@drawable/baseline_message_24" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="댓글" />
 
     </LinearLayout>
 
