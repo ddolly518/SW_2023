@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private DiaryFragment diaryFragment;
     private BulletinFragment bulletinFragment;
     private SettingFragment settingFragment;
+    private ChatFragment chatFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +35,11 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.bulletin:
                     setFrag(2);
                     break;
-                case R.id.setting:
+                case R.id.chat:
                     setFrag(3);
+                    break;
+                case R.id.setting:
+                    setFrag(4);
                     break;
             }
             return true;
@@ -44,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         diaryFragment = new DiaryFragment();
         bulletinFragment = new BulletinFragment();
         settingFragment = new SettingFragment();
+        chatFragment = new ChatFragment();
         setFrag(0);
     }
     private void setFrag(int n) {
@@ -62,7 +67,11 @@ public class MainActivity extends AppCompatActivity {
                 ft.replace(R.id.container, bulletinFragment);
                 ft.commit();
                 break;
-            case 3 :
+            case 3:
+                ft.replace(R.id.container, chatFragment);
+                ft.commit();
+                break;
+            case 4 :
                 ft.replace(R.id.container, settingFragment);
                 ft.commit();
                 break;

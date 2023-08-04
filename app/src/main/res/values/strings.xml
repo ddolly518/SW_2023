@@ -6,4 +6,6 @@
     <string name="register">회원가입</string>
     <string name="logout">로그아웃</string>
     <string name="leave">회원탈퇴</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
