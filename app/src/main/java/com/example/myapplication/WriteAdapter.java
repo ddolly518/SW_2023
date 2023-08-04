@@ -33,6 +33,7 @@ public class WriteAdapter extends RecyclerView.Adapter<WriteAdapter.WriteViewHol
     public void onBindViewHolder(@NonNull WriteAdapter.WriteViewHolder holder, int position) {
         holder.textDiaryContent.setText(arrayList.get(position).getContent());
         holder.textViewDate.setText(arrayList.get(position).getDate());
+        holder.textEmotion.setText(arrayList.get(position).getEmotion());
 
     }
 
@@ -45,11 +46,13 @@ public class WriteAdapter extends RecyclerView.Adapter<WriteAdapter.WriteViewHol
         TextView textDiaryContent;
         TextView textViewDate;
         TextView textViewId;
+        TextView textEmotion;
         public WriteViewHolder(@NonNull View itemView) {
             super(itemView);
             this.textDiaryContent = itemView.findViewById(R.id.textDiaryContent);
             this.textViewDate = itemView.findViewById(R.id.textViewDate);
             this.textViewId = itemView.findViewById(R.id.textViewId);
+            this.textEmotion = itemView.findViewById(R.id.textEmotion);
         }
     }
 }
