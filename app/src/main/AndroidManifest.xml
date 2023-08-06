@@ -33,5 +33,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".ChangepwActivity"
+            android:exported="false"/>
     </application>
 </manifest>
