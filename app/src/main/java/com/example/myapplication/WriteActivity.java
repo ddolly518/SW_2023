@@ -60,6 +60,12 @@ public class WriteActivity extends AppCompatActivity {
                 case R.id.radio_sad:
                     selection.setText("sad");
                     break;
+                case R.id.radio_angry:
+                    selection.setText("angry");
+                    break;
+                case R.id.radio_soso:
+                    selection.setText("soso");
+                    break;
             }
         });
         btn_write.setOnClickListener(view -> {

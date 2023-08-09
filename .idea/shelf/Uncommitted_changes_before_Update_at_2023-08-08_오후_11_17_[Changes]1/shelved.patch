@@ -1,0 +1,22 @@
+Index: app/src/main/res/layout/activity_write.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_write.xml b/app/src/main/res/layout/activity_write.xml
+--- a/app/src/main/res/layout/activity_write.xml	
++++ b/app/src/main/res/layout/activity_write.xml	
+@@ -7,13 +7,6 @@
+     android:orientation="vertical"
+     tools:context=".WriteActivity">
+ 
+-    <TextView
+-        android:id="@+id/textView"
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:text="오늘의 일기"
+-        tools:layout_editor_absoluteX="21dp"
+-        tools:layout_editor_absoluteY="47dp" />
+ 
+     <LinearLayout
+        android:layout_width="match_parent"
