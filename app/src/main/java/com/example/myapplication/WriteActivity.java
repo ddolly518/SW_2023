@@ -71,7 +71,7 @@ public class WriteActivity extends AppCompatActivity {
         btn_write.setOnClickListener(view -> {
             long mNow = System.currentTimeMillis();
             Date mDate = new Date(mNow);
-            SimpleDateFormat mFormat = new SimpleDateFormat("yyyy-MM-dd");
+            SimpleDateFormat mFormat = new SimpleDateFormat("yyyy년 MM월 dd일");
             String sDate = mFormat.format(mDate);
             String strContent = et_content.getText().toString();
             String sId = firebaseUser.getUid();

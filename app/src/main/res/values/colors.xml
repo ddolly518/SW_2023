@@ -15,4 +15,5 @@
     <color name="bot_black_color">#5F5F4F</color>
     <color name="user_back_color">#ACAC9A</color>
     <color name="fab_color">#5F5F4F</color> <!--버튼색-->
+    <color name="register">#4C4C4C</color>
 </resources>

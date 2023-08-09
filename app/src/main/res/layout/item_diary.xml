@@ -3,50 +3,62 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp"
+    android:layout_margin="20dp"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
-    <!--<LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="start"
-        android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textViewMood"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:padding="5dp"
-            android:textStyle="bold"
-            android:text="기분: 00" />
-
-    </LinearLayout>-->
     <TextView
         android:id="@+id/textViewId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_margin="3dp"
         android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/textViewDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:layout_margin="3dp"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
         android:text="2023년 00월 00일" />
 
-    <TextView
-        android:id="@+id/textDiaryContent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:text="일기 내용" />
-
-    <TextView
-        android:id="@+id/textEmotion"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Emotion" />
+        android:layout_height="match_parent"
+        android:background="@drawable/border_diary_item"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textDiaryContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:text="일기 내용" />
 
-</LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/text_color" />
+
+        <TextView
+            android:id="@+id/textEmotion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/bot_black_color"
+            android:text="Emotion" />
+    </LinearLayout>
+
+
+    </LinearLayout>
