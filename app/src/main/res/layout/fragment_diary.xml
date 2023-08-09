@@ -25,28 +25,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:background="#D9FFFD"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_diary"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp" />
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_diary" />
+
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="left"
                 android:layout_weight="1"
-                android:textStyle="bold"
-                android:textSize="17dp"
+                android:gravity="left"
+                android:text="오늘의 일기"
                 android:textColor="@color/black"
-                android:text="오늘의 일기" />
+                android:textSize="17dp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
