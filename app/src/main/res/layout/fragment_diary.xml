@@ -86,40 +86,6 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!--<TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="오늘의 기분"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="86dp"
-        android:layout_below="@+id/textView"/>
-
-    <TextView
-        android:id="@+id/selection"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="선택한 기분"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="86dp"
-        android:layout_toRightOf="@+id/textView2"
-        android:layout_below="@+id/textView"
-        android:paddingStart="20dp"/>
-
-    <EditText
-        android:id="@+id/et_content"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:lines="20"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="349dp"
-        android:layout_below="@+id/selection"
-        android:hint="오늘 일기 내용"/>-->
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"

@@ -4,9 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:layout_margin="15dp"
+    android:padding="10dp"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/background_color">
+    android:background="@drawable/border_diary_item">
 
     <TextView
         android:id="@+id/textViewNickname"
@@ -14,23 +15,29 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/text_color"
         android:text="닉네임" />
 
     <TextView
         android:id="@+id/textViewDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:textSize="16dp"
+        android:textColor="@color/bot_black_color"
         android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
         android:text="날짜" />
 
     <TextView
         android:id="@+id/textViewPostContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
+        android:textSize="16dp"
         android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/text_color"
         android:text="content" />
 
     <LinearLayout
@@ -70,25 +77,5 @@
             android:text="댓글" />
 
     </LinearLayout>
-
-    <!--<LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="start"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/buttonLike"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="좋아요" />
-
-        <Button
-            android:id="@+id/buttonComment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="댓글" />
-
-    </LinearLayout>-->
 
 </LinearLayout>

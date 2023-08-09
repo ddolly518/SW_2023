@@ -20,7 +20,7 @@
         android:id="@+id/textViewDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="3dp"
+        android:layout_marginBottom="3dp"
         android:padding="5dp"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:padding="5dp"
+            android:padding="10dp"
             android:textSize="16sp"
             android:textColor="@color/text_color"
             android:text="일기 내용" />
@@ -45,8 +45,6 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
             android:background="@color/text_color" />
 
         <TextView
@@ -54,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:padding="5dp"
+            android:padding="10dp"
             android:textSize="16sp"
             android:textColor="@color/bot_black_color"
             android:text="Emotion" />
