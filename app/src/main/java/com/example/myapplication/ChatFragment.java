@@ -75,13 +75,10 @@ public class ChatFragment extends Fragment {
             public void onResponse(Call<MsgModal> call, Response<MsgModal> response) {
                 if (response.isSuccessful()) {
                     MsgModal modal = response.body();
-                    // Get the response text from the API
                     String responseText = modal.getCnt();
 
-                    // Process the response text to handle newline characters and replace them with actual line breaks
                     responseText = responseText.replace("\\n", "\n");
 
-                    // Add the processed response to the chat list
                     chatsModalArrayList.add(new ChatsModal(responseText, BOT_KEY));
                     chatRVAdapter.notifyDataSetChanged();
                 }
