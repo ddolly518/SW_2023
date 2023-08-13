@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,6 +34,26 @@ public class SettingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_setting, container, false);
 
+        //닉네임 변경
+        EditText etNickname = view.findViewById(R.id.et_nickname);
+        Button btn_saveNickname = view.findViewById(R.id.btn_save_nickname);
+        btn_saveNickname.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String newNickname = etNickname.getText().toString().trim();
+
+                updateNickname(newNickname);
+
+                Toast.makeText(getActivity(), "닉네임 변경 완료", Toast.LENGTH_SHORT).show();
+            }
+
+            private void updateNickname(String newNickname) {
+                SharedPreferences sharedPreferences = requireActivity().getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("nickname", newNickname);
+                editor.apply();
+            }
+        });
         //로그아웃
         mFirebaseAuth = FirebaseAuth.getInstance();
         btn_logout = view.findViewById(R.id.btn_logout);
@@ -87,7 +108,7 @@ public class SettingFragment extends Fragment {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
             }
         });
-        // Inflate the layout for this fragment
+
         return view;
     }
 }

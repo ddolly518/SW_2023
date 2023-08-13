@@ -101,7 +101,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginRight="35dp"
         android:layout_marginLeft="35dp"
-        android:padding="10dp"
+        android:padding="15dp"
         android:background="@drawable/writing_border"
         android:hint="오늘의 일기를 작성해주세요."/>
 

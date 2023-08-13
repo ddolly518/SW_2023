@@ -64,7 +64,7 @@ public class DiaryFragment extends Fragment {
         arrayList = new ArrayList<>();
         long mNow = System.currentTimeMillis();
         Date mDate = new Date(mNow);
-        SimpleDateFormat mFormat = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat mFormat = new SimpleDateFormat("yyyy.MM.dd");
         String sDate = mFormat.format(mDate);
 
         mFirebaseAuth = FirebaseAuth.getInstance();

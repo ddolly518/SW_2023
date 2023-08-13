@@ -1,41 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#FEFEDF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bar_color"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_chat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="챗봇"
+            android:textColor="@color/text_color"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idRVChats"
         android:layout_width="match_parent"
         android:layout_height="600dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_marginTop="70dp"
-        android:layout_marginBottom="60dp" />
+        android:layout_marginBottom="60dp"
+        />
 
     <RelativeLayout
-        android:id="@+id/idRLMsg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#c1e8ff">
+        android:id="@+id/idRLMsg"
+        >
 
         <EditText
             android:id="@+id/idEdtMessage"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-
             android:layout_centerInParent="true"
-            android:layout_marginStart="3dp"
+
+            android:layout_marginStart="10dp"
             android:layout_marginTop="3dp"
             android:layout_marginEnd="3dp"
             android:layout_marginBottom="3dp"
             android:layout_toLeftOf="@id/idFABSend"
             android:hint="Enter Message"
             android:singleLine="true"
-            android:textColor="#5f5f4f"
-            android:textColorHint="#5f5f4f" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/idFABSend"
@@ -44,13 +72,13 @@
             android:layout_alignParentRight="true"
             android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
-            android:layout_marginEnd="4dp"
+            android:layout_marginEnd="10dp"
             android:layout_marginBottom="4dp"
             android:src="@drawable/ic_send"
-            app:backgroundTint="#A1CCC4"
+            app:backgroundTint="@color/fab_color"
             app:fabCustomSize="45dp"
             app:tint="@color/white"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck"/>
     </RelativeLayout>
 
 </RelativeLayout>
