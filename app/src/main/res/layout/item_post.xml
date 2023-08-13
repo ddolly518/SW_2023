@@ -1,67 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#D9FFFD"
     android:orientation="vertical"
-    android:padding="16dp"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/background_color">
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/textViewNickname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textStyle="bold"
         android:layout_marginBottom="16dp"
-        android:text="닉네임" />
+        android:text="닉네임"
+        android:textColor="#5F5F4F"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
         android:layout_marginStart="12dp"
-        android:text="날짜" />
+        android:text="날짜"
+        android:textColor="#5F5F4F"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textViewPostContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
         android:layout_marginStart="12dp"
-        android:text="content" />
+        android:text="content"
+        android:textColor="#5F5F4F"
+        android:textSize="16sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center|left">
+        android:gravity="center|left"
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/btn_like"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            app:srcCompat="@drawable/baseline_favorite_border_24"
             android:background="@android:color/transparent"
+            app:srcCompat="@drawable/baseline_favorite_border_24"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/likeCount"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:textAlignment="center"
             android:gravity="center"
-            android:text="0" />
+            android:text="0"
+            android:textAlignment="center" />
 
         <ImageButton
             android:id="@+id/btn_comment"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:background="@android:color/transparent"
-            tools:ignore="SpeakableTextPresentCheck"
-            app:srcCompat="@drawable/baseline_message_24" />
+            app:srcCompat="@drawable/baseline_message_24"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/comment"
