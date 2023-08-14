@@ -49,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="개인"
+            android:text="개인 설정"
             android:textColor="@color/text_color" />
 
         <View
@@ -193,7 +193,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="화면"
+            android:text="화면 모드"
             android:textColor="@color/text_color" />
 
         <View
@@ -272,12 +272,15 @@
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="#D9FFFD"
+                android:backgroundTint="#D9FFFD"
                 app:srcCompat="@drawable/baseline_local_phone_24" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#D9FFFD"
                 android:text="129 (보건복지상담센터)"
                 android:textColor="@color/text_color" />
         </LinearLayout>
