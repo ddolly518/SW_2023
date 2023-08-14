@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         bulletinFragment = new BulletinFragment();
         settingFragment = new SettingFragment();
         chatFragment = new ChatFragment();
-        setFrag(0);
+        //setFrag(0);
     }
     private void setFrag(int n) {
         fm = getSupportFragmentManager();

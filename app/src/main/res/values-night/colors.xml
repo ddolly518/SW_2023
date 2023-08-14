@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="text_color">#FFFFFF</color>
-    <color name="background_color">#000000</color>
-    <color name="bar_color">#2F4858</color>
+    <color name="background_color">#1b1d25</color>
+    <color name="bar_color">#A1CCC4</color>
     <color name="bot_black_color">#FFFFFF</color>
-    <color name="teal_200">#2F4858</color>
+    <color name="teal_200">#A1CCC4</color>
+
 </resources>

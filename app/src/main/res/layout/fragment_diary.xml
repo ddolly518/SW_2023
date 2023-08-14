@@ -50,7 +50,7 @@
                 android:layout_weight="1"
                 android:gravity="left"
                 android:text="오늘의 일기"
-                android:textColor="@color/black"
+                android:textColor="@color/text_color"
                 android:textSize="17dp"
                 android:textStyle="bold" />
 
