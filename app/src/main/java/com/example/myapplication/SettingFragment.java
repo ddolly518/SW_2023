@@ -1,8 +1,13 @@
 package com.example.myapplication;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +20,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.core.app.NotificationCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -29,11 +35,51 @@ public class SettingFragment extends Fragment {
     private View view;
     private Button btn_send;
     private EditText em;
+    private Button btn_alarm;
+    private NotificationManager manager;
+    private NotificationCompat.Builder builder;
+    private static String CHANNEL_ID = "channel1";
+    private static String CHANEL_NAME = "Channel1";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_setting, container, false);
 
+        //푸시 알림
+        btn_alarm = view.findViewById(R.id.btn_alarm);
+        btn_alarm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showNoti();
+            }
+
+            private void showNoti() {
+                builder = null;
+                manager = (NotificationManager) requireContext().getSystemService(Context.NOTIFICATION_SERVICE);
+
+                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+                    manager.createNotificationChannel(
+                            new NotificationChannel(CHANNEL_ID, CHANEL_NAME, NotificationManager.IMPORTANCE_DEFAULT)
+                    );
+                    builder = new NotificationCompat.Builder(requireContext(),CHANNEL_ID);
+                }else{
+                    builder = new NotificationCompat.Builder(requireContext());
+                }
+
+                builder.setContentTitle("Diemo");
+                builder.setContentText("오늘 하루는 어떤가요?");
+                builder.setSmallIcon(R.drawable.ic_alarm);
+
+                builder.setAutoCancel(true);
+                Intent intent = new Intent(requireContext(), WriteActivity.class);
+                PendingIntent pendingIntent = PendingIntent.getActivity(requireContext(), 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+                builder.setContentIntent(pendingIntent);
+
+                Notification notification = builder.build();
+
+                manager.notify(1,notification);
+            }
+        });
         //닉네임 변경
         EditText etNickname = view.findViewById(R.id.et_nickname);
         Button btn_saveNickname = view.findViewById(R.id.btn_save_nickname);

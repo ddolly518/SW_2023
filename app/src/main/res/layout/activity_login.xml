@@ -4,50 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:background="@color/background_color"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-50dp"
+        android:text="Diemo"
+        android:textSize="50dp" />
 
     <EditText
         android:id="@+id/et_email"
         android:layout_width="230dp"
         android:layout_height="48dp"
-        android:layout_marginTop="32dp"
-        android:padding="10dp"
-        android:ems="10"
+        android:layout_marginTop="70dp"
+        android:autofillHints="no"
         android:background="@drawable/button_login"
         android:backgroundTint="@color/teal_200"
+        android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="no"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_pass"
         android:layout_width="230dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
-        android:padding="10dp"
-        android:ems="10"
+        android:autofillHints="no"
         android:background="@drawable/button_login"
         android:backgroundTint="@color/teal_200"
+        android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_email"
-        android:autofillHints="no"/>
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
 
     <Button
         android:id="@+id/btn_login"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="@string/login"
         android:background="@drawable/button_login"
+        android:text="@string/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_pass" />
@@ -61,9 +69,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="도움이 필요하신가요?"
             android:layout_gravity="center_vertical"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:text="도움이 필요하신가요?" />
 
         <Button
             android:id="@+id/btn_register"
