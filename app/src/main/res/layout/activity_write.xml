@@ -12,11 +12,11 @@
         android:id="@+id/btn_write"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="등록"
+        android:text="@string/registration"
         android:textStyle="bold"
-        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
-        android:layout_gravity="right"
+        android:layout_gravity="end"
         android:background="@drawable/button_round"/>
 
 
@@ -27,7 +27,7 @@
            android:layout_height="wrap_content"
            android:gravity="center"
            android:textSize="16sp"
-           android:hint="오늘의 기분을 선택해주세요!"
+           android:hint="@string/select"
            android:layout_marginTop="50dp"
            android:textAlignment="center" />
 
@@ -44,11 +44,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@drawable/selector_radio_text"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
             android:gravity="center"
             android:button="@null"
-            android:textSize="16dp"
-            android:text="#happy" />
+            android:textSize="16sp"
+            android:text="@string/happy" />
 
         <RadioButton
             android:id="@+id/radio_sad"
@@ -59,8 +59,8 @@
             android:layout_marginLeft="10dp"
             android:gravity="center"
             android:button="@null"
-            android:textSize="16dp"
-            android:text="#sad" />
+            android:textSize="16sp"
+            android:text="@string/sad" />
 
         <RadioButton
             android:id="@+id/radio_angry"
@@ -71,19 +71,19 @@
             android:layout_marginLeft="10dp"
             android:gravity="center"
             android:button="@null"
-            android:textSize="16dp"
-            android:text="#angry" />
+            android:textSize="16sp"
+            android:text="@string/angry" />
 
         <RadioButton
             android:id="@+id/radio_soso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@drawable/selector_radio_text"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:button="@null"
             android:gravity="center"
-            android:textSize="16dp"
-            android:text="#soso" />
+            android:textSize="16sp"
+            android:text="@string/soso" />
 
 
     </RadioGroup>
@@ -97,13 +97,14 @@
         android:inputType="textMultiLine"
         tools:ignore="SpeakableTextPresentCheck"
         android:lines="20"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:layout_marginTop="50dp"
         android:layout_marginRight="35dp"
         android:layout_marginLeft="35dp"
         android:padding="15dp"
         android:background="@drawable/writing_border"
-        android:hint="오늘의 일기를 작성해주세요."/>
+        android:importantForAutofill="no"
+        android:hint="@string/write"/>
 
 
 </LinearLayout>

@@ -24,7 +24,7 @@
         android:id="@+id/textViewDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:textColor="@color/bot_black_color"
         android:layout_marginStart="12dp"
         android:layout_marginBottom="12dp"
@@ -34,7 +34,7 @@
         android:id="@+id/textViewPostContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:layout_marginStart="12dp"
         android:layout_marginBottom="12dp"
         android:textColor="@color/text_color"
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="#A1CCC4"
-        android:gravity="center|left">
+        android:gravity="center|start">
 
         <ImageButton
             android:id="@+id/btn_like"
@@ -53,6 +53,7 @@
             android:layout_height="48dp"
             app:srcCompat="@drawable/baseline_favorite_border_24"
             android:background="@android:color/transparent"
+            android:contentDescription="@null"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
@@ -69,6 +70,7 @@
             android:layout_height="48dp"
             android:background="@android:color/transparent"
             tools:ignore="SpeakableTextPresentCheck"
+            android:contentDescription="@null"
             app:srcCompat="@drawable/baseline_message_24" />
 
         <TextView

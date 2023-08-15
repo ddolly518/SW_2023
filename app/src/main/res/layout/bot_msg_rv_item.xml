@@ -19,6 +19,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_margin="10dp"
+            android:contentDescription="@null"
             android:src="@drawable/ic_bot" />
 
         <TextView
@@ -28,7 +29,7 @@
             android:layout_gravity="center"
             android:layout_margin="5dp"
             android:padding="3dp"
-            android:text="Bot Message"
+            android:text="@string/message"
             android:textColor="@color/white" />
 
     </LinearLayout>
