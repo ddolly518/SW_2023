@@ -5,19 +5,19 @@
 
     <!--regular-->
     <font
-        android:font="@font/bmjua_ttf"
+        android:font="@font/bmjua"
         android:fontStyle="normal"
         android:fontWeight="400"
-        app:font="@font/bmjua_ttf"
+        app:font="@font/bmjua"
         app:fontStyle="normal"
         app:fontWeight="500" />
 
     <!--bold-->
     <font
-        android:font="@font/bmjua_ttf"
+        android:font="@font/bmjua"
         android:fontStyle="normal"
         android:fontWeight="700"
-        app:font="@font/bmjua_ttf"
+        app:font="@font/bmjua"
         app:fontStyle="normal"
         app:fontWeight="1000" />
 
