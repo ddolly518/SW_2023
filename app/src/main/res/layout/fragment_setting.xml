@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FEFEDF"
     android:orientation="vertical">
 
     <LinearLayout
@@ -11,10 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/bar_color"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -70,17 +70,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/text_color"
+                    android:layout_marginStart="20dp"
                     android:text="@string/name_change"
-                    android:layout_marginStart="20dp"/>
+                    android:textColor="@color/text_color" />
 
                 <EditText
                     android:id="@+id/et_nickname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
+                    android:hint="@string/new_name"
                     android:importantForAutofill="no"
-                    android:hint="@string/new_name" />
+                    android:inputType="text" />
             </LinearLayout>
 
             <Button
@@ -171,9 +171,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
-                    android:inputType="textEmailAddress"
+                    android:hint="@string/email1"
                     android:importantForAutofill="no"
-                    android:hint="@string/email1" />
+                    android:inputType="textEmailAddress" />
             </LinearLayout>
 
             <Button
@@ -193,8 +193,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:textColor="@color/text_color"
-                android:text="@string/alarm" />
+                android:text="@string/alarm"
+                android:textColor="@color/text_color" />
 
             <View
                 android:layout_width="match_parent"
@@ -209,17 +209,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
                     android:text="@string/push_alarm"
-                    android:textColor="@color/text_color"
-                    android:layout_marginStart="20dp"/>
+                    android:textColor="@color/text_color" />
 
                 <Button
                     android:id="@+id/btn_alarm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="38dp"
-                    android:textColor="@color/background_color"
-                    android:text="@string/alarm1"/>
+                    android:text="@string/alarm1"
+                    android:textColor="@color/background_color" />
             </LinearLayout>
 
             <View
@@ -290,9 +290,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/call"
                 android:layout_marginTop="5sp"
                 android:layout_marginBottom="5sp"
+                android:text="@string/call"
                 android:textColor="@color/text_color" />
 
             <LinearLayout
