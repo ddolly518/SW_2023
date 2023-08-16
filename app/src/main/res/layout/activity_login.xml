@@ -19,6 +19,7 @@
 
     <EditText
         android:id="@+id/et_email"
+        style="@style/customEditTextFontStyle"
         android:layout_width="230dp"
         android:layout_height="48dp"
         android:layout_marginTop="70dp"
@@ -35,6 +36,7 @@
 
     <EditText
         android:id="@+id/et_pass"
+        style="@style/customEditTextFontStyle"
         android:layout_width="230dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
@@ -51,6 +53,7 @@
 
     <Button
         android:id="@+id/btn_login"
+        style="@style/customButtonFontStyle"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -75,6 +78,7 @@
 
         <Button
             android:id="@+id/btn_register"
+            style="@style/customButtonFontStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end|center_vertical"

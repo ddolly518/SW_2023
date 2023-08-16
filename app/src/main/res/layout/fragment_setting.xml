@@ -85,6 +85,7 @@
 
             <Button
                 android:id="@+id/btn_save_nickname"
+                style="@style/customButtonFontStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="155dp"
@@ -109,6 +110,7 @@
 
                 <Button
                     android:id="@+id/btn_leave"
+                    style="@style/customButtonFontStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="100dp"
@@ -135,6 +137,7 @@
 
                 <Button
                     android:id="@+id/btn_logout"
+                    style="@style/customButtonFontStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="73dp"
@@ -178,6 +181,7 @@
 
             <Button
                 android:id="@+id/send"
+                style="@style/customButtonFontStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="155dp"
@@ -215,6 +219,7 @@
 
                 <Button
                     android:id="@+id/btn_alarm"
+                    style="@style/customButtonFontStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="38dp"

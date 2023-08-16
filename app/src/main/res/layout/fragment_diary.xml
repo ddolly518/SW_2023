@@ -66,23 +66,25 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btn_share"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="11sp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/button_round"
-            android:text="@string/share" />
+            <Button
+                android:id="@+id/btn_share"
+                style="@style/customButtonFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button_round"
+                android:text="@string/share"
+                android:textSize="11sp" />
 
-        <Button
-            android:id="@+id/btn_remove"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="11sp"
-            android:layout_marginStart="20dp"
-            android:background="@drawable/button_round"
-            android:text="@string/delete" />
+            <Button
+                android:id="@+id/btn_remove"
+                style="@style/customButtonFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/button_round"
+                android:text="@string/delete"
+                android:textSize="11sp" />
 
         </LinearLayout>
     </LinearLayout>
@@ -91,7 +93,10 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:layout_below="@+id/linear"/>
+        android:layout_below="@+id/linear"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp" />
 </RelativeLayout>
 

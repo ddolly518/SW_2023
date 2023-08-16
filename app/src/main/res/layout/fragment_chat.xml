@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FEFEDF"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/bar_color"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/chat"
-            android:textColor="@color/text_color"
+            android:textColor="#000000"
             android:textSize="17sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -38,20 +38,19 @@
         android:layout_width="match_parent"
         android:layout_height="610dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:layout_marginTop="50dp"
-        android:layout_marginBottom="60dp"
-        />
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="60dp" />
 
     <RelativeLayout
+        android:id="@+id/idRLMsg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/idRLMsg"
-        >
+        android:layout_alignParentBottom="true">
 
         <EditText
             android:id="@+id/idEdtMessage"
+            style="@style/customEditTextFontStyle"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_centerInParent="true"
@@ -60,12 +59,12 @@
             android:layout_marginEnd="3dp"
             android:layout_marginBottom="3dp"
             android:layout_toStartOf="@id/idFABSend"
-            android:importantForAutofill="no"
             android:hint="@string/Enter_message"
-            android:singleLine="true"
-            android:textColor="@color/black"
+            android:importantForAutofill="no"
             android:inputType="text"
-            android:textColorHint="@color/black" />
+            android:singleLine="true"
+            android:textColor="#5F5F4F"
+            android:textColorHint="#5F5F4F" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/idFABSend"
@@ -76,12 +75,12 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="4dp"
-            android:src="@drawable/ic_send"
             android:contentDescription="@null"
+            android:src="@drawable/ic_send"
             app:backgroundTint="@color/fab_color"
             app:fabCustomSize="45dp"
             app:tint="@color/white"
-            tools:ignore="SpeakableTextPresentCheck"/>
+            tools:ignore="SpeakableTextPresentCheck" />
     </RelativeLayout>
 
 </RelativeLayout>

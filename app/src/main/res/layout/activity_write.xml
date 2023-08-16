@@ -10,14 +10,15 @@
 
     <Button
         android:id="@+id/btn_write"
+        style="@style/customButtonFontStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/registration"
-        android:textStyle="bold"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp"
         android:layout_gravity="end"
-        android:background="@drawable/button_round"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_round"
+        android:text="@string/registration"
+        android:textStyle="bold" />
 
 
 
@@ -41,70 +42,75 @@
 
         <RadioButton
             android:id="@+id/radio_happy"
+            style="@style/customRadioButtonFontStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@drawable/selector_radio_text"
             android:layout_marginEnd="10dp"
-            android:gravity="center"
             android:button="@null"
-            android:textSize="16sp"
-            android:text="@string/happy" />
+            android:gravity="center"
+            android:text="@string/happy"
+            android:textColor="@drawable/selector_radio_text"
+            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/radio_sad"
+            style="@style/customRadioButtonFontStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@drawable/selector_radio_text"
-            android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
-            android:gravity="center"
+            android:layout_marginRight="10dp"
             android:button="@null"
-            android:textSize="16sp"
-            android:text="@string/sad" />
+            android:gravity="center"
+            android:text="@string/sad"
+            android:textColor="@drawable/selector_radio_text"
+            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/radio_angry"
+            style="@style/customRadioButtonFontStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@drawable/selector_radio_text"
-            android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
-            android:gravity="center"
+            android:layout_marginRight="10dp"
             android:button="@null"
-            android:textSize="16sp"
-            android:text="@string/angry" />
+            android:gravity="center"
+            android:text="@string/angry"
+            android:textColor="@drawable/selector_radio_text"
+            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/radio_soso"
+            style="@style/customRadioButtonFontStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@drawable/selector_radio_text"
             android:layout_marginStart="10dp"
             android:button="@null"
             android:gravity="center"
-            android:textSize="16sp"
-            android:text="@string/soso" />
+            android:text="@string/soso"
+            android:textColor="@drawable/selector_radio_text"
+            android:textSize="16sp" />
 
 
     </RadioGroup>
 
     <EditText
         android:id="@+id/et_content"
+        style="@style/customEditTextFontStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:lines="20"
-        android:textSize="16sp"
+        android:layout_marginLeft="35dp"
         android:layout_marginTop="50dp"
         android:layout_marginRight="35dp"
-        android:layout_marginLeft="35dp"
-        android:padding="15dp"
         android:background="@drawable/writing_border"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/write"
         android:importantForAutofill="no"
-        android:hint="@string/write"/>
+        android:inputType="textMultiLine"
+        android:lines="20"
+        android:padding="15dp"
+        android:textSize="16sp"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 </LinearLayout>

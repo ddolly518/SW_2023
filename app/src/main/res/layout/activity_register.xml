@@ -11,51 +11,55 @@
 
     <EditText
         android:id="@+id/et_email"
+        style="@style/customEditTextFontStyle"
         android:layout_width="230dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
-        android:ems="10"
-        android:padding="10dp"
+        android:autofillHints="no"
         android:background="@drawable/button_login"
         android:backgroundTint="@color/teal_200"
+        android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="no"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_pass"
+        style="@style/customEditTextFontStyle"
         android:layout_width="230dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
-        android:padding="10dp"
-        android:ems="10"
+        android:autofillHints="no"
         android:background="@drawable/button_login"
         android:backgroundTint="@color/teal_200"
+        android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_email"
-        android:autofillHints="no"/>
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
 
     <EditText
         android:id="@+id/et_name"
+        style="@style/customEditTextFontStyle"
         android:layout_width="230dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
-        android:padding="10dp"
-        android:ems="10"
+        android:autofillHints="no"
         android:background="@drawable/button_login"
         android:backgroundTint="@color/teal_200"
-        android:inputType="text"
+        android:ems="10"
         android:hint="@string/nickname"
-        android:autofillHints="no"/>
+        android:inputType="text"
+        android:padding="10dp" />
 
     <Button
         android:id="@+id/btn_register"
+        style="@style/customButtonFontStyle"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
