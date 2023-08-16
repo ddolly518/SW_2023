@@ -76,6 +76,7 @@
 
                 <EditText
                     android:id="@+id/et_nickname"
+                    style="@style/customEditTextFontStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/new_name"
@@ -170,6 +171,7 @@
 
                 <EditText
                     android:id="@+id/email"
+                    style="@style/customEditTextFontStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
