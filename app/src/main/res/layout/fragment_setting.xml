@@ -98,8 +98,9 @@
                 style="@style/customButtonFontStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="155dp"
-                android:background="#A1CCC4"
+                android:layout_marginStart="280dp"
+
+                android:background="@drawable/button_round"
                 android:backgroundTint="#FFA1CCC4"
                 android:text="@string/save"
                 app:iconTint="#A1CCC4" />
@@ -122,10 +123,11 @@
                     style="@style/customButtonFontStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="100dp"
-                    android:background="#A1CCC4"
-                    android:text="@string/leave"
-                    android:textColor="@color/background_color" />
+                    android:layout_marginStart="150dp"
+
+                    android:background="@drawable/button_round"
+
+                    android:text="회원가입" />
             </LinearLayout>
 
 
@@ -147,8 +149,8 @@
                     style="@style/customButtonFontStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="73dp"
-                    android:background="#A1CCC4"
+                    android:layout_marginStart="130dp"
+                    android:background="@drawable/button_round"
                     android:text="@string/logout"
                     app:iconTint="#5F5F4F" />
             </LinearLayout>
@@ -188,8 +190,8 @@
                 style="@style/customButtonFontStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="155dp"
-                android:background="#A1CCC4"
+                android:layout_marginStart="280dp"
+                android:background="@drawable/button_round"
                 android:text="@string/send"
                 app:iconTint="#5F5F4F" />
 
@@ -231,10 +233,10 @@
                     style="@style/customButtonFontStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="38dp"
-                    android:background="#A1CCC4"
+                    android:layout_marginStart="100dp"
+
+                    android:background="@drawable/button_round"
                     android:text="@string/alarm1"
-                    android:textColor="@color/background_color"
                     app:iconTint="#A1CCC4" />
             </LinearLayout>
 
