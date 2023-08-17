@@ -35,23 +35,20 @@ public class BulletinAdapter extends RecyclerView.Adapter<BulletinAdapter.Bullet
         holder.textViewPostContent.setText(bulletinInfo.getContent());
         holder.textViewDate.setText(bulletinInfo.getDate());
         holder.textViewNickname.setText(bulletinInfo.getName());
-        holder.btn_like.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int currentLikeCount = bulletinInfo.getLikeCount();
+        holder.btn_like.setOnClickListener(view -> {
+            int currentLikeCount = bulletinInfo.getLikeCount();
 
-                if (holder.btn_like.isSelected()) {
-                    currentLikeCount--;
-                    holder.btn_like.setImageResource(R.drawable.baseline_favorite_border_24);
-                    holder.btn_like.setSelected(false);
-                } else {
-                    currentLikeCount++;
-                    holder.btn_like.setImageResource(R.drawable.baseline_favorite_24);
-                    holder.btn_like.setSelected(true);
-                }
-                bulletinInfo.setLikeCount(currentLikeCount);
-                holder.likeCount.setText(String.valueOf(currentLikeCount));
+            if (holder.btn_like.isSelected()) {
+                currentLikeCount--;
+                holder.btn_like.setImageResource(R.drawable.baseline_favorite_border_24);
+                holder.btn_like.setSelected(false);
+            } else {
+                currentLikeCount++;
+                holder.btn_like.setImageResource(R.drawable.baseline_favorite_24);
+                holder.btn_like.setSelected(true);
             }
+            bulletinInfo.setLikeCount(currentLikeCount);
+            holder.likeCount.setText(String.valueOf(currentLikeCount));
         });
         holder.btn_like.setSelected(bulletinInfo.isLiked());
     }

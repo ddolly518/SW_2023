@@ -1,8 +1,6 @@
 package com.example.myapplication;
 //activity_write에서 넘어가는 정보
 
-import java.util.Date;
-
 public class WriteInfo {
     private String idToken;
     private String content;

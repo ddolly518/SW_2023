@@ -18,13 +18,10 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.app.NotificationCompat;
 import androidx.fragment.app.Fragment;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class SettingFragment extends Fragment {
@@ -119,21 +116,15 @@ public class SettingFragment extends Fragment {
         //비밀번호 재설정
         em = view.findViewById(R.id.email);
         btn_send = view.findViewById(R.id.send);
-        btn_send.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String e = em.getText().toString();
-                FirebaseAuth.getInstance().sendPasswordResetEmail(e).addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()) {
-                            Toast.makeText(getActivity(), "send mail", Toast.LENGTH_SHORT).show();
-                        } else {
-                            Toast.makeText(getActivity(), "Fail", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-            }
+        btn_send.setOnClickListener(view -> {
+            String e = em.getText().toString();
+            FirebaseAuth.getInstance().sendPasswordResetEmail(e).addOnCompleteListener(task -> {
+                if (task.isSuccessful()) {
+                    Toast.makeText(getActivity(), "send mail", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getActivity(), "Fail", Toast.LENGTH_SHORT).show();
+                }
+            });
         });
         //다크모드
         mode_switch = view.findViewById(R.id.mode_switch);

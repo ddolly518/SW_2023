@@ -3,7 +3,6 @@ package com.example.myapplication;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -20,15 +19,12 @@ public class ChangenameActivity extends AppCompatActivity {
         EditText etNickname = findViewById(R.id.et_nickname);
         Button btnSaveNickname = findViewById(R.id.btn_save_nickname);
 
-        btnSaveNickname.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String newNickname = etNickname.getText().toString().trim();
+        btnSaveNickname.setOnClickListener(view -> {
+            String newNickname = etNickname.getText().toString().trim();
 
-                updateNickname(newNickname);
+            updateNickname(newNickname);
 
-                Toast.makeText(ChangenameActivity.this, "닉네임 변경 완료", Toast.LENGTH_SHORT).show();
-            }
+            Toast.makeText(ChangenameActivity.this, "닉네임 변경 완료", Toast.LENGTH_SHORT).show();
         });
     }
 

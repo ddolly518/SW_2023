@@ -46,16 +46,13 @@ public class ChatFragment extends Fragment {
         chatsRV.setLayoutManager(manager);
         chatsRV.setAdapter(chatRVAdapter);
 
-        sendMsgFAB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (userMsgEdt.getText().toString().isEmpty()) {
-                    Toast.makeText(requireContext(), "Please enter your message", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                getResponse(userMsgEdt.getText().toString());
-                userMsgEdt.setText("");
+        sendMsgFAB.setOnClickListener(view -> {
+            if (userMsgEdt.getText().toString().isEmpty()) {
+                Toast.makeText(requireContext(), "Please enter your message", Toast.LENGTH_SHORT).show();
+                return;
             }
+            getResponse(userMsgEdt.getText().toString());
+            userMsgEdt.setText("");
         });
         return view;
     }

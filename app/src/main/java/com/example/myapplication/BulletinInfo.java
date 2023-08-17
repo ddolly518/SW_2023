@@ -1,8 +1,5 @@
 package com.example.myapplication;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class BulletinInfo {
     private String content;
     private String date;

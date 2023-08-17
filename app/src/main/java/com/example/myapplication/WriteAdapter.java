@@ -10,8 +10,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.Date;
-
 public class WriteAdapter extends RecyclerView.Adapter<WriteAdapter.WriteViewHolder> {
     private ArrayList<WriteInfo> arrayList;
     private Context context;
