@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#FEFEDF"
+    android:backgroundTint="#FFFEDF"
     android:orientation="vertical">
 
     <LinearLayout
@@ -37,12 +38,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/fixedLayout"
-        android:background="#FF1B1D25"
-        android:backgroundTint="#FF1B1D25">
+        android:background="#FFFEDF"
+        android:backgroundTint="#FFFEDF">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#FFFEDF"
+            android:backgroundTint="#FFFEDF"
             android:orientation="vertical">
 
             <View
@@ -322,8 +325,8 @@
                     android:id="@+id/imageView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="#A1CCC4"
-                    android:backgroundTint="#A1CCC4"
+                    android:background="#D9FFFD"
+                    android:backgroundTint="#D9FFFD"
                     android:contentDescription="@null"
                     app:srcCompat="@drawable/baseline_local_phone_24" />
 
@@ -331,7 +334,7 @@
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/bar_color"
+                    android:background="#D9FFFD"
                     android:text="@string/call1"
                     android:textColor="@color/text_color" />
             </LinearLayout>
@@ -353,6 +356,7 @@
                     android:id="@+id/imageView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="#D9FFFD"
                     android:contentDescription="@null"
                     app:srcCompat="@drawable/baseline_local_phone_24" />
 
@@ -360,6 +364,8 @@
                     android:id="@+id/textView5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="#D9FFFD"
+                    android:backgroundTint="#D9FFFD"
                     android:text="@string/call2"
                     android:textColor="@color/text_color" />
             </LinearLayout>
