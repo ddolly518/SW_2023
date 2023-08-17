@@ -302,7 +302,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:text="@string/etc"
-                android:textSize="15ㄴp"
+                android:textSize="15sp"
                 android:textColor="@color/text_color" />
 
             <View
