@@ -41,9 +41,9 @@ public class ChangepwActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(ChangepwActivity.this, "send mail", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ChangepwActivity.this, "메일 성공", Toast.LENGTH_SHORT).show();
                         } else {
-                            Toast.makeText(ChangepwActivity.this, "Fail", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ChangepwActivity.this, "메일 실패", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

@@ -120,9 +120,9 @@ public class SettingFragment extends Fragment {
             String e = em.getText().toString();
             FirebaseAuth.getInstance().sendPasswordResetEmail(e).addOnCompleteListener(task -> {
                 if (task.isSuccessful()) {
-                    Toast.makeText(getActivity(), "send mail", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "메일 성공", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(getActivity(), "Fail", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "메일 실패", Toast.LENGTH_SHORT).show();
                 }
             });
         });
