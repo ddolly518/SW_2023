@@ -5,5 +5,6 @@
     <color name="bar_color">#A1CCC4</color>
     <color name="bot_black_color">#FFFFFF</color>
     <color name="teal_200">#A1CCC4</color>
+    <color name="back_color">#1b1d25</color>
 
 </resources>
