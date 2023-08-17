@@ -36,7 +36,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/fixedLayout">
+        android:layout_below="@id/fixedLayout"
+        android:background="#FF1B1D25"
+        android:backgroundTint="#FF1B1D25">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -90,7 +92,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="155dp"
-                android:text="@string/save" />
+                android:background="#A1CCC4"
+                android:backgroundTint="#FFA1CCC4"
+                android:text="@string/save"
+                app:iconTint="#A1CCC4" />
 
             <View
                 android:layout_width="match_parent"
@@ -115,6 +120,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="100dp"
+                    android:background="#A1CCC4"
                     android:text="@string/leave"
                     android:textColor="@color/background_color" />
             </LinearLayout>
@@ -142,6 +148,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="73dp"
+                    android:background="#A1CCC4"
                     android:text="@string/logout"
                     app:iconTint="#5F5F4F" />
             </LinearLayout>
@@ -187,6 +194,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="155dp"
+                android:background="#A1CCC4"
                 android:text="@string/send"
                 app:iconTint="#5F5F4F" />
 
@@ -225,8 +233,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="38dp"
+                    android:background="#A1CCC4"
                     android:text="@string/alarm1"
-                    android:textColor="@color/background_color" />
+                    android:textColor="@color/background_color"
+                    app:iconTint="#A1CCC4" />
             </LinearLayout>
 
             <View
@@ -312,15 +322,15 @@
                     android:id="@+id/imageView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="#D9FFFD"
-                    android:backgroundTint="#D9FFFD"
+                    android:background="#A1CCC4"
+                    android:backgroundTint="#A1CCC4"
                     android:contentDescription="@null"
                     app:srcCompat="@drawable/baseline_local_phone_24" />
 
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:background="@color/bar_color"
                     android:text="@string/call1"
                     android:textColor="@color/text_color" />
