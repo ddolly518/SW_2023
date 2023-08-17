@@ -58,6 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:textSize="15dp"
                 android:text="@string/setting1"
                 android:textColor="@color/text_color" />
 
@@ -85,6 +86,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/new_name"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:textSize="14dp"
                     android:importantForAutofill="no"
                     android:inputType="text" />
             </LinearLayout>
@@ -100,10 +104,6 @@
                 android:text="@string/save"
                 app:iconTint="#A1CCC4" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/text_color" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -128,10 +128,7 @@
                     android:textColor="@color/background_color" />
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/text_color" />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -156,11 +153,6 @@
                     app:iconTint="#5F5F4F" />
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginBottom="5dp"
-                android:background="@color/text_color" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -184,8 +176,8 @@
                     style="@style/customEditTextFontStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
                     android:hint="@string/email1"
                     android:importantForAutofill="no"
                     android:inputType="textEmailAddress" />
@@ -204,18 +196,22 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
                 android:background="@color/text_color" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:textSize="15dp"
                 android:text="@string/alarm"
                 android:textColor="@color/text_color" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_marginTop="5dp"
                 android:background="@color/text_color" />
 
             <LinearLayout
@@ -245,18 +241,22 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
                 android:background="@color/text_color" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:textSize="15dp"
                 android:text="@string/mode"
                 android:textColor="@color/text_color" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_marginTop="5dp"
                 android:background="@color/text_color" />
 
             <TextView
@@ -293,6 +293,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
                 android:background="@color/text_color" />
 
             <TextView
@@ -300,11 +302,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:text="@string/etc"
+                android:textSize="15dp"
                 android:textColor="@color/text_color" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_marginTop="5dp"
                 android:background="@color/text_color" />
 
             <TextView
@@ -312,6 +316,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5sp"
                 android:layout_marginBottom="5sp"
+                android:layout_marginStart="20dp"
                 android:text="@string/call"
                 android:textColor="@color/text_color" />
 
@@ -319,6 +324,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -343,13 +349,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/call_1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
                 android:textColor="@color/text_color" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -373,6 +381,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
                 android:text="@string/call_2"
                 android:textColor="@color/text_color" />
         </LinearLayout>
