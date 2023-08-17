@@ -15,9 +15,8 @@
         android:clickable="true"
         tools:ignore="SpeakableTextPresentCheck"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
         android:contentDescription="@null"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="345dp"
         android:layout_marginBottom="10dp"
         app:srcCompat="@android:drawable/ic_input_add" />
 

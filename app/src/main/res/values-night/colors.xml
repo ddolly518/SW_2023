@@ -5,6 +5,5 @@
     <color name="bar_color">#5F5F4F</color>
     <color name="bot_black_color">#FFFFFF</color>
     <color name="teal_200">#5F5F4F</color>
-    <color name="click">#5F5F4F</color>
-
+    <color name="click">#696969</color>
 </resources>
