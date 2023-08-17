@@ -7,6 +7,7 @@
     <color name="teal_700">#94B5A7</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="click">#A1CCC4</color>
 
     <color name="background_color">#FEFEDF</color>
     <color name="bar_color">#D9FFFD</color>

@@ -6,7 +6,6 @@
     android:layout_height="wrap_content"
     android:layout_margin="15dp"
     android:background="@drawable/border_diary_item"
-    android:backgroundTint="#FEFEDF"
     android:orientation="vertical"
     android:padding="10dp">
 
@@ -44,7 +43,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#A1CCC4"
+        android:background="@color/click"
         android:gravity="center|start"
         android:orientation="horizontal">
 
