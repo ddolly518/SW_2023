@@ -11,7 +11,7 @@
     <color name="background_color">#FEFEDF</color>
     <color name="bar_color">#D9FFFD</color>
     <color name="text_color">#000000</color>
-    <color name="back_color">#13253D</color>
+    <color name="back_color">#FFFEDF</color>
     <color name="bot_black_color">#5F5F4F</color>
     <color name="user_back_color">#ACAC9A</color>
     <color name="fab_color">#5F5F4F</color> <!--버튼색-->
