@@ -38,7 +38,7 @@
     <string name="push_alarm">푸시 알림을 받으려면 누르세요.</string>
     <string name="alarm1">알림 받기</string>
     <string name="mode">화면 모드</string>
-    <string name="dark_mode">다크 모드로 설정하려면 체크하세요.</string>
+    <string name="dark_mode">다크 모드/라이트 모드로 설정하려면 체크하세요.</string>
     <string name="etc">기타</string>
     <string name="call">전문적인 심리 상담을 원하는 경우 아래 번호로 전화하세요.</string>
     <string name="call1">129 (보건복지상담센터)</string>
